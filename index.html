@@ -3,111 +3,432 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>portfolio</title>
+    <title>Preetam N Gowda - Backend Developer</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=Source+Sans+3:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="navigation">
-        <h1 style="font-family: Georgia, 'Times New Roman', Times, serif;">Preetam</h1>
-        <nav>
-            <a href="#Home">Home</a>
-            <a href="#About">About</a>
-            <a href="#Skills">Skills</a>
-            <a href="#Education">Education</a>
-            <a href="#Contact">Contact</a>
-        </nav>
-        <!-- theme toggle removed: single (light) theme only -->
-    </div>
-   <div id="Home" class="intro-section">
-    <div class="intro">
-        <h1 style="font-size: 3rem; ">Hi There,<br>I'm Preetam N Gowda</h1>
-        <h2 style="padding-top:2rem; font-size: 3rem;">Aspiring Software Developer,<br>an AI ML enthusiast</h2>
-        <button id="workButton">View My Work <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M440-800v487L216-537l-56 57 320 320 320-320-56-57-224 224v-487h-80Z"/></svg></button>
-    </div>
-    <div class="profile-image">
-        <img src="../Photos/profile.png" alt="Preetam N Gowda Profile Picture" />
-    </div>
-    </div>
-   
-    <div id="About" class="about">
-        <h1>About Me</h1>
-        <p>Hi, I'm Preetam N Gowda, a web developer passionate about building clean, modern, and responsive user interfaces. I work with HTML, CSS, JavaScript, and Tailwind CSS, and I enjoy creating websites that focus on good design and smooth user experience.</p>
-        <p>I am currently learning competitive programming and improving my skills in C, C++, Java, and Python. I'm also interested in Linux, DevOps, and Data Science, and I plan to start learning backend development soon to become a full-stack developer.</p>
-        <p>I love exploring new technologies and constantly improving my skills to build better and smarter digital solutions.</p>
-     </div>
+    <nav class="navigation">
+        <div class="nav-container">
+            <h1 class="logo">Preetam N Gowda</h1>
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#education">Education</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
 
-    <div id="Skills" class="skills">
-        <h1>Skills & Technologies</h1>
-        <div class="skills-container">
-            <div class="skill-box frontend">
-                <h2>Frontend</h2>
-                <ul>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
-                    <li>Tailwind CSS</li>
-                </ul>
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <p class="greeting">Hello, I'm</p>
+                <h1 class="hero-title">Preetam N Gowda</h1>
+                <h2 class="hero-subtitle">Backend Developer & MERN Stack Engineer</h2>
+                <p class="hero-description">Building scalable server-side solutions and exploring the frontiers of AI/ML</p>
+                <div class="hero-cta">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                </div>
             </div>
-            <div class="skill-box languages">
-                <h2>Programming Languages</h2>
-                <ul>
-                    <li>C</li>
-                    <li>C++</li>
-                    <li>Python</li>
-                </ul>
-            </div>
-            <div class="skill-box DSA">
-                <h2>DSA</h2>
-                <ul>
-                    <li>Data Structures</li>
-                    <li>Algorithms</li>
-                    <li>Problem Solving</li>
-                </ul>
-            </div>
-            <div class="skill-box tools">
-                <h2>Tools</h2>
-                <ul>
-                    <li>Git & GitHub</li>
-                </ul>
+            <div class="hero-image">
+                <div class="image-wrapper">
+                    <img src="../Photos/profile.png" alt="Preetam N Gowda" />
+                    <div class="image-decoration"></div>
+                </div>
             </div>
         </div>
-    </div>
-    <div id="Education" class="education">
-        <h1>Education</h1>
-        <div class="education-container">
-            <div class="education-box">
-                <div class="timeline-badge">2024-28</div>
-                <h2>Bachelor of Engineering<br>Computer Science</h2>
-                <h3>Dayananda Sagar College of Engineering</h3>
-                <p>Karnataka, India</p>
-                <ul>
-                    <li>CGPA: 9.6/10</li>
-                    <li>Currently in 2nd Year</li>
-                </ul>
+        <div class="scroll-indicator">
+            <span>Scroll Down</span>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M12 5V19M12 19L5 12M12 19L19 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="section-container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="lead">I'm a passionate backend developer specializing in building robust, scalable server-side applications using the MERN stack and modern development practices.</p>
+                    
+                    <p>My expertise lies in Node.js and Express.js, where I design RESTful APIs and implement efficient database solutions with MongoDB. I focus on writing clean, maintainable code that follows industry best practices.</p>
+                    
+                    <p>Beyond backend development, I'm actively exploring cutting-edge technologies including machine learning, deep learning, agentic AI systems, and DevOps practices. I'm particularly interested in how AI can be integrated into backend architectures to create intelligent, autonomous systems.</p>
+                    
+                    <p>Currently pursuing my B.E. in Computer Science at Dayananda Sagar College of Engineering with a CGPA of 9.6/10, I combine strong academic performance with practical development skills.</p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-card">
+                        <h3>9.6</h3>
+                        <p>CGPA</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>2nd Year</h3>
+                        <p>B.E. CSE</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>MERN</h3>
+                        <p>Stack Focus</p>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-    <div id="Contact" class="contact">
-        <h1>Connect with me!!</h1>
-        <p>I'm always open to discussing new Projects, creative ideas, or opportunities to be part of your vision</p>
-        <div class="contact-icons">
-            <a href="https://preetam1602@gmail.com" class="contact-link email" title="Email">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
-                </svg>
-            </a>
-            <a href="https://github.com/preetam1602" target="_blank" rel="noopener" class="contact-link github" title="GitHub">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v 3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-                </svg>
-            </a>
-            <a href="https://www.linkedin.com/in/preetam-n-gowda-b5b46036a" target="_blank" rel="noopener" class="contact-link linkedin" title="LinkedIn">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
-                </svg>
-            </a>
+    </section>
+
+    <section id="skills" class="skills">
+        <div class="section-container">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <div class="category-header">
+                        <div class="icon-wrapper backend-icon">
+                            <svg viewBox="0 0 24 24" fill="none">
+                                <path d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z" stroke="currentColor" stroke-width="2"/>
+                                <path d="M8 12h8M12 8v8" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                        </div>
+                        <h3>Backend Development</h3>
+                    </div>
+                    <ul class="skill-list">
+                        <li>
+                            <span class="skill-name">Node.js</span>
+                            <span class="skill-level">Intermediate</span>
+                        </li>
+                        <li>
+                            <span class="skill-name">Express.js</span>
+                            <span class="skill-level">Intermediate</span>
+                        </li>
+                        <li>
+                            <span class="skill-name">RESTful APIs</span>
+                            <span class="skill-level">Proficient</span>
+                        </li>
+                        <li>
+                            <span class="skill-name">MongoDB</span>
+                            <span class="skill-level">Proficient</span>
+                        </li>
+                        <li>
+                            <span class="skill-name">Authentication & Authorization</span>
+                            <span class="skill-level">Proficient</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="skill-category">
+                    <div class="category-header">
+                        <div class="icon-wrapper mern-icon">
+                            <svg viewBox="0 0 24 24" fill="none">
+                                <path d="M12 2L2 7l10 5 10-5-10-5z" stroke="currentColor" stroke-width="2"/>
+                                <path d="M2 17l10 5 10-5M2 12l10 5 10-5" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                        </div>
+                        <h3>Full Stack (MERN)</h3>
+                    </div>
+                    <ul class="skill-list">
+                        <li>
+                            <span class="skill-name">MongoDB</span>
+                            <span class="skill-level">Proficient</span>
+                        </li>
+                        <li>
+                            <span class="skill-name">Express.js</span>
+                            <span class="skill-level">Intermediate</span>
+                        </li>
+                        <li>
+                            <span class="skill-name">React</span>
+                            <span class="skill-level">Intermediate</span>
+                        </li>
+                        <li>
+                            <span class="skill-name">Node.js</span>
+                            <span class="skill-level">Intermediate</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="skill-category">
+                    <div class="category-header">
+                        <div class="icon-wrapper frontend-icon">
+                            <svg viewBox="0 0 24 24" fill="none">
+                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" stroke="currentColor" stroke-width="2"/>
+                                <path d="M14 2v6h6" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                        </div>
+                        <h3>Frontend Technologies</h3>
+                    </div>
+                    <ul class="skill-list">
+                        <li>
+                            <span class="skill-name">HTML5 & CSS3</span>
+                            <span class="skill-level">Advanced</span>
+                        </li>
+                        <li>
+                            <span class="skill-name">JavaScript (ES6+)</span>
+                            <span class="skill-level">Intermediate</span>
+                        </li>
+                        <li>
+                            <span class="skill-name">React</span>
+                            <span class="skill-level">Intermediate</span>
+                        </li>
+                        <li>
+                            <span class="skill-name">Tailwind CSS</span>
+                            <span class="skill-level">Proficient</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="skill-category">
+                    <div class="category-header">
+                        <div class="icon-wrapper ai-icon">
+                            <svg viewBox="0 0 24 24" fill="none">
+                                <circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="2"/>
+                                <path d="M12 1v6m0 6v6M1 12h6m6 0h6" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                        </div>
+                        <h3>AI/ML (Exploring)</h3>
+                    </div>
+                    <ul class="skill-list">
+                        <li>
+                            <span class="skill-name">Python</span>
+                            <span class="skill-level">Proficient</span>
+                        </li>
+                        <li>
+                            <span class="skill-name">Machine Learning</span>
+                            <span class="skill-level">Exploring</span>
+                        </li>
+                        <li>
+                            <span class="skill-name">Deep Learning</span>
+                            <span class="skill-level">Interested</span>
+                        </li>
+                        <li>
+                            <span class="skill-name">Agentic AI</span>
+                            <span class="skill-level">Interested</span>
+                        </li>
+                        <li>
+                            <span class="skill-name">NumPy & Pandas</span>
+                            <span class="skill-level">Familiar</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="skill-category">
+                    <div class="category-header">
+                        <div class="icon-wrapper lang-icon">
+                            <svg viewBox="0 0 24 24" fill="none">
+                                <path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                        <h3>Programming Languages</h3>
+                    </div>
+                    <ul class="skill-list">
+                        <li>
+                            <span class="skill-name">JavaScript</span>
+                            <span class="skill-level">Advanced</span>
+                        </li>
+                        <li>
+                            <span class="skill-name">Python</span>
+                            <span class="skill-level">Proficient</span>
+                        </li>
+                        <li>
+                            <span class="skill-name">C/C++</span>
+                            <span class="skill-level">Intermediate</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="skill-category">
+                    <div class="category-header">
+                        <div class="icon-wrapper devops-icon">
+                            <svg viewBox="0 0 24 24" fill="none">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                        </div>
+                        <h3>DevOps & Tools</h3>
+                    </div>
+                    <ul class="skill-list">
+                        <li>
+                            <span class="skill-name">Git & GitHub</span>
+                            <span class="skill-level">Proficient</span>
+                        </li>
+                        <li>
+                            <span class="skill-name">Linux</span>
+                            <span class="skill-level">Beginner</span>
+                        </li>
+                        <li>
+                            <span class="skill-name">DevOps Practices</span>
+                            <span class="skill-level">Interested</span>
+                        </li>
+                        <li>
+                            <span class="skill-name">VS Code</span>
+                            <span class="skill-level">Advanced</span>
+                        </li>
+                        <li>
+                            <span class="skill-name">Postman</span>
+                            <span class="skill-level">Proficient</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
-    </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <div class="section-container">
+            <h2 class="section-title">Featured Projects</h2>
+            <p class="section-subtitle">Showcasing my backend development and full-stack capabilities</p>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>RESTful API Server</h3>
+                        <div class="project-tags">
+                            <span class="tag">Node.js</span>
+                            <span class="tag">Express</span>
+                            <span class="tag">MongoDB</span>
+                        </div>
+                    </div>
+                    <p class="project-description">Designed and implemented a scalable RESTful API with authentication, data validation, and CRUD operations for a web application.</p>
+                    <div class="project-features">
+                        <ul>
+                            <li>JWT-based authentication</li>
+                            <li>MongoDB integration</li>
+                            <li>Error handling middleware</li>
+                            <li>API documentation</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Full Stack MERN Application</h3>
+                        <p>Coming Soon</p>
+                        <div class="project-tags">
+                            <span class="tag">MERN</span>
+                            <span class="tag">React</span>
+                            <span class="tag">Node.js</span>
+                        </div>
+                    </div>
+                    <p class="project-description">End-to-end web application with React frontend and Node.js backend, featuring user authentication and real-time data updates.</p>
+                    <div class="project-features">
+                        <ul>
+                            <li>Responsive React UI</li>
+                            <li>RESTful backend</li>
+                            <li>User management system</li>
+                            <li>State management</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="project-card coming-soon">
+                    <div class="project-header">
+                        <h3>More Projects Coming Soon</h3>
+                        <div class="project-tags">
+                            <span class="tag">In Development</span>
+                        </div>
+                    </div>
+                    <p class="project-description">Currently working on exciting new projects involving AI integration and backend optimization.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="education" class="education">
+        <div class="section-container">
+            <h2 class="section-title">Education</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2024 - 2028</span>
+                        <h3>Bachelor of Engineering in Computer Science</h3>
+                        <h4>Dayananda Sagar College of Engineering</h4>
+                        <p class="location">Karnataka, India</p>
+                        <div class="education-details">
+                            <div class="detail-item">
+                                <span class="detail-label">Current Status:</span>
+                                <span class="detail-value">2nd Year Student</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">CGPA:</span>
+                                <span class="detail-value highlight">9.6 / 10</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Focus Areas:</span>
+                                <span class="detail-value">Backend Development, Data Structures, Algorithms</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="section-container">
+            <h2 class="section-title">Let's Connect</h2>
+            <p class="section-subtitle">Open to discussing backend development opportunities, collaborations, and innovative projects</p>
+            
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>Get In Touch</h3>
+                    <p>Whether you have a question, opportunity, or just want to say hello, feel free to reach out. I'm always interested in discussing new projects and ideas.</p>
+                    
+                    <div class="contact-methods">
+                        <a href="mailto:preetam1602@gmail.com" class="contact-method">
+                            <div class="method-icon email-icon">
+                                <svg viewBox="0 0 24 24" fill="none">
+                                    <path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" stroke="currentColor" stroke-width="2"/>
+                                </svg>
+                            </div>
+                            <div class="method-details">
+                                <span class="method-label">Email</span>
+                                <span class="method-value">preetam1602@gmail.com</span>
+                            </div>
+                        </a>
+
+                        <a href="https://github.com/preetam1602" target="_blank" rel="noopener noreferrer" class="contact-method">
+                            <div class="method-icon github-icon">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                </svg>
+                            </div>
+                            <div class="method-details">
+                                <span class="method-label">GitHub</span>
+                                <span class="method-value">@preetam1602</span>
+                            </div>
+                        </a>
+
+                        <a href="https://www.linkedin.com/in/preetam-n-gowda-b5b46036a" target="_blank" rel="noopener noreferrer" class="contact-method">
+                            <div class="method-icon linkedin-icon">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                                </svg>
+                            </div>
+                            <div class="method-details">
+                                <span class="method-label">LinkedIn</span>
+                                <span class="method-value">Preetam N Gowda</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2026 Preetam N Gowda. All rights reserved.</p>
+            <p class="footer-tagline">Building the future, one API at a time.</p>
+        </div>
+    </footer>
+
     <script src="script.js"></script>
 </body>
 </html>
